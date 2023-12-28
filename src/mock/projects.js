@@ -196,7 +196,7 @@ export const projects = [
   {
     id: 12,
     projectName: 'asielvallevalera-portfolio',
-    imgCover: pjt12Img10,
+    imgCover: pjt12Img6,
     images: [pjt12Img1, pjt12Img2, pjt12Img3, pjt12Img4, pjt12Img5, pjt12Img6, pjt12Img7, pjt12Img8, pjt12Img9, pjt12Img10],
     title: 'card-title-12',
     description: 'card-description-12',

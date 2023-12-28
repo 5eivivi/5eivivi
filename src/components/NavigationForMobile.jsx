@@ -10,7 +10,7 @@ import { useContext } from 'react'
 // Icons.
 import { AiOutlineHome } from 'react-icons/ai'
 import { BiUser } from 'react-icons/bi'
-import { LiaHammerSolid } from 'react-icons/lia'
+import { LiaToolsSolid } from 'react-icons/lia'
 import { MdWorkOutline } from 'react-icons/md'
 import { BsPlusLg } from 'react-icons/bs'
 import { RxDividerHorizontal } from 'react-icons/rx'
@@ -37,7 +37,7 @@ export const NavigationForMobile = () => {
             <BiUser />
           </a>
           <a href='#skills' className='icon' title={language.locale === 'en-US' ? 'Skills' : 'Habilidades'}>
-            <LiaHammerSolid />
+            <LiaToolsSolid />
           </a>
           <a href='#projects' className='icon' title={language.locale === 'en-US' ? 'Projects' : 'Proyectos'}>
             <MdWorkOutline />
