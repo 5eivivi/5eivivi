@@ -1,0 +1,54 @@
+import './NavigationForMobile.css'
+
+// My logo.
+import { TbLetterA } from 'react-icons/tb'
+
+// Multilanguage (Format.JS library).
+import { LanguageContext } from '../context/languageContext.jsx'
+import { useContext } from 'react'
+
+// Icons.
+import { AiOutlineHome } from 'react-icons/ai'
+import { BiUser } from 'react-icons/bi'
+import { LiaHammerSolid } from 'react-icons/lia'
+import { MdWorkOutline } from 'react-icons/md'
+import { BsPlusLg } from 'react-icons/bs'
+import { RxDividerHorizontal } from 'react-icons/rx'
+
+// Custom Hook que maneja si el hidden o visible la NavigationForMobile.
+import { useHiddenOrVisibleNavigationForMobile } from '../hooks/useHiddenOrVisibleNavigationForMobile.jsx'
+
+export const NavigationForMobile = () => {
+  const language = useContext(LanguageContext)
+
+  // Custom Hook.
+  // Visible or hidden Settings.jsx and SocialNetworks.jsx over NavigationForMobile.jsx for screen width <= 850px (App.css).
+  const { visibility, handleclick } = useHiddenOrVisibleNavigationForMobile()
+
+  return (
+    <aside className='navigation-for-mobile'>
+      <div className='navigation-for-mobile__container'>
+        <div className='navigation-for-mobile__container-logo'><TbLetterA /></div>
+        <nav>
+          <a href='#home' className='icon' title={language.locale === 'en-US' ? 'Home' : 'Inicio'}>
+            <AiOutlineHome />
+          </a>
+          <a href='#about' className='icon' title={language.locale === 'en-US' ? 'About' : 'Sobre mi'}>
+            <BiUser />
+          </a>
+          <a href='#skills' className='icon' title={language.locale === 'en-US' ? 'Skills' : 'Habilidades'}>
+            <LiaHammerSolid />
+          </a>
+          <a href='#projects' className='icon' title={language.locale === 'en-US' ? 'Projects' : 'Proyectos'}>
+            <MdWorkOutline />
+          </a>
+        </nav>
+        {
+          visibility === '-'
+            ? <button className='icon' title='On' onClick={() => { handleclick() }}><BsPlusLg /></button>
+            : <button className='icon' title='Off' onClick={() => { handleclick() }}><RxDividerHorizontal /></button>
+        }
+      </div>
+    </aside>
+  )
+}

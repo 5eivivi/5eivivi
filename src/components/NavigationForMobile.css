@@ -1,0 +1,36 @@
+.navigation-for-mobile {
+  background-color: var(--background-navigation-color);  
+  height: 50px;
+  display: var(--display-navigation-for-mobile);
+  align-items: center;
+}
+
+.navigation-for-mobile__container {
+  width: 300px;
+  margin: 0 auto;
+  display: flex;
+  gap: 30px;
+}
+
+.navigation-for-mobile__container a:hover {
+  color: var(--skin-color);
+}
+
+.navigation-for-mobile__container-logo {
+  font-size: 25px;
+  color: var(--primary-letter-color);
+}
+.navigation-for-mobile__container-logo > svg {
+  border: 1px solid var(--primary-letter-color);
+  border-radius: 50%;
+  padding: 1px;
+}
+
+.navigation-for-mobile__container > nav {
+  display: flex;
+  gap: 20px;
+}
+
+button:hover {
+  color: var(--skin-color);
+}
