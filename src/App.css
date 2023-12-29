@@ -35,8 +35,8 @@
   --navigation-width: 200px;
 
   /* Home */
-  --width-border-photo-home: 240px;  
-  --height-border-photo-home: 240px;
+  --width-border-photo-home: 200px;  
+  --height-border-photo-home: 200px;
 
   /* Skills */
   /* --skills-margin-top: 0px; */
@@ -154,8 +154,8 @@ section {
 @media screen and (max-width: 1600px) {
   :root {
     /* Home */
-    --width-border-photo-home: 205px;  
-    --height-border-photo-home: 205px;
+    --width-border-photo-home: 180px;  
+    --height-border-photo-home: 180px;
     /* Settings and Social Networks en App.css */
     --settings-and-social-networks-right: 40px;
   }
@@ -233,11 +233,11 @@ section {
   }
 }
 
-@media screen and (max-width: 800px) {
+/* @media screen and (max-width: 800px) {
   .home-section__container--my-img {
     display: none;
   }
-}
+} */
 
 @media screen and (max-width: 670px) {
   :root {
