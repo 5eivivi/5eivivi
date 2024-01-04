@@ -19,7 +19,7 @@ export default function NavigationMenus () {
         <AiOutlineHome />
         <span className='icon-text disable-text'><FormattedMessage id='home' defaultMessage='Home' /></span>
       </a>
-      <a href='#about' className='menus icon' title={language.locale === 'en-US' ? 'About' : 'Sobre mi'}>
+      <a href='#about' className='menus icon' title={language.locale === 'en-US' ? 'About' : 'Sobre mí'}>
         <BiUser />
         <span className='icon-text disable-text'><FormattedMessage id='about' defaultMessage='About' /></span>
       </a>
