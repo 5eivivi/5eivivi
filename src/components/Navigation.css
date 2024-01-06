@@ -9,17 +9,6 @@
   flex-direction: column;
 }
 
-.logo {
-  font-size: 60px;
-  color: var(--primary-letter-color);
-}
-
-.logo > svg {
-  border: 1px solid var(--primary-letter-color);
-  border-radius: 50%;
-  padding: 5px;
-}
-
 .navigation__container > nav {
   display: flex;
   flex-direction: column;

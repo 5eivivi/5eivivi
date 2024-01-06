@@ -233,12 +233,6 @@ section {
   }
 }
 
-/* @media screen and (max-width: 800px) {
-  .home-section__container--my-img {
-    display: none;
-  }
-} */
-
 @media screen and (max-width: 670px) {
   :root {
     --projects-header-height-text: 90px;

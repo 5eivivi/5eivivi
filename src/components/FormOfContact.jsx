@@ -2,13 +2,13 @@ import './FormOfContact.css'
 // Language.
 import { FormattedMessage } from 'react-intl'
 // Custom Hook
-import { useSendEmail } from '../hooks/useSendEmail.jsx'
+// import { useSendEmail } from '../hooks/useSendEmail.jsx'
 
 // Validate the form.
 import { useForm } from 'react-hook-form'
 
 export const FormOfContact = () => {
-  const { form, sendEmail } = useSendEmail() // Custom Hook.
+  // const { form, sendEmail } = useSendEmail() // Custom Hook.
   const { register, formState: { errors }, handleSubmit } = useForm()
 
   const onSubmit = handleSubmit((data) => {

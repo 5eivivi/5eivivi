@@ -17,7 +17,7 @@ import { useFilterAndPagination } from '../hooks/useFilterAndPagination.jsx'
 import { useImgGallery } from '../hooks/useImgGallery.jsx'
 
 // Custom Hook.
-//  I don't show the images' gallery on the mobile devices.
+// To detect when this website is on a desktop device or a mobile device.
 import useIsMobileDevice from '../hooks/useIsMobileDevice.jsx'
 
 export const Projects = () => {
@@ -28,7 +28,6 @@ export const Projects = () => {
   const { openOrCloseImgGallery, setOpenOrCloseImgGallery, ImgGallery, handleImgGallery, imgListToShow } = useImgGallery(projects)
 
   // Custom Hook.
-  // I don't show the images' gallery on the mobile devices.
   const { isMobileDevice } = useIsMobileDevice()
 
   return (
@@ -54,6 +53,8 @@ export const Projects = () => {
               <div className='card' key={project.id}>
                 <div className='card-container'>
                   <div className='card_header'>
+
+                    {/* To set only on the desktop devices the onclick event to the image gallery; Not on mobile devices. */}
                     {
                       !isMobileDevice
                         ? (
@@ -64,6 +65,7 @@ export const Projects = () => {
                           )
                         : (<img src={project.imgCover} alt={`Img of the project ${project.id}`} />)
                     }
+
                   </div>
                   <div>
                     <h2 className='card-title'>

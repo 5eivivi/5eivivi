@@ -1,15 +1,18 @@
 import './Navigation.css'
 
-// My logo.
-import { TbLetterA } from 'react-icons/tb'
-
 import NavigationMenus from './NavigationMenus.jsx'
+
+// My logo is for both screen size desktop and mobile.
+import AnchorWithMyLogo from '../components/AnchorWithMyLogo.jsx'
 
 export const Navigation = () => {
   return (
     <aside className='navigation'>
       <div className='navigation__container'>
-        <div className='logo'><TbLetterA /></div>
+
+        {/*  My logo */}
+        <AnchorWithMyLogo />
+
         <nav>
           <NavigationMenus />
         </nav>

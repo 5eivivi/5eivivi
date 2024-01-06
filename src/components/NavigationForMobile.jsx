@@ -1,9 +1,6 @@
 import './NavigationForMobile.css'
 
-// My logo.
-import { TbLetterA } from 'react-icons/tb'
-
-// Multilanguage (Format.JS library).
+// Multi language (Format.JS library).
 import { LanguageContext } from '../context/languageContext.jsx'
 import { useContext } from 'react'
 
@@ -18,6 +15,9 @@ import { RxDividerHorizontal } from 'react-icons/rx'
 // Custom Hook que maneja si el hidden o visible la NavigationForMobile.
 import { useHiddenOrVisibleNavigationForMobile } from '../hooks/useHiddenOrVisibleNavigationForMobile.jsx'
 
+// My logo is for both screen size desktop and mobile.
+import AnchorWithMyLogo from '../components/AnchorWithMyLogo.jsx'
+
 export const NavigationForMobile = () => {
   const language = useContext(LanguageContext)
 
@@ -28,7 +28,10 @@ export const NavigationForMobile = () => {
   return (
     <aside className='navigation-for-mobile'>
       <div className='navigation-for-mobile__container'>
-        <div className='navigation-for-mobile__container-logo'><TbLetterA /></div>
+
+        {/*  My logo */}
+        <AnchorWithMyLogo />
+
         <nav>
           <a href='#home' className='icon' title={language.locale === 'en-US' ? 'Home' : 'Inicio'}>
             <AiOutlineHome />
