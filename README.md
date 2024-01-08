@@ -8,8 +8,8 @@ Web Developer
 I am a Web Developer who loves JavaScript technologies!
 
 * 🌍  I am based in Texas, United States
-* 🖥️  See my portfolio at [MyPortfolio](https://asielvallevalera.vercel.app/)
-* ✉️  You can contact me at [asielvallevalera@gmail.com](mailto:asielvallevalera@gmail.com)
+* 🖥️  See my portfolio at [my portfolio](https://asielvallevalera.vercel.app/)
+* ✉️  You can contact me at [my email](mailto:asielvallevalera@gmail.com)
 * ⚡  Fun fact: my favorite hobby is programming and watching action movies 😎
 
 
